@@ -3,6 +3,13 @@
 78 -> третьей цифры нет
 32679 -> 6
 */
-System.Console.Write("Трехзначное число > ");
+System.Console.Write("ВВедите число > ");
 string number = Console.ReadLine();
 int num = Convert.ToInt32(number);
+if (num > 99)
+{
+    int result = num % 10;
+    System.Console.WriteLine($"Третья цифра числа {num} равна {result}");
+}
+else
+    System.Console.WriteLine($"Третьей цифры нет");
