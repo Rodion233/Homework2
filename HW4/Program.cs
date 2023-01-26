@@ -6,4 +6,5 @@ int number = rnd.Next(100, 999);
 System.Console.WriteLine(number);
 int num1 = (number / 100) % 10;
 int num2 = number % 10;
-System.Console.WriteLine($"Случайное число {number}, число без второй цифры {num1}{num2}");
+int number1 = int.Parse(num1.ToString() + num2.ToString());
+System.Console.WriteLine($"Случайное число {number}, число без второй цифры {number1}");
